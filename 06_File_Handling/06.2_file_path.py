@@ -61,7 +61,7 @@ else:
 
 # Getting the absolute path
 
-relative_path = 'example.txt'
+relative_path = '6_File_Handling/example.txt'
 
 absolute_path = os.path.abspath(relative_path)
 
