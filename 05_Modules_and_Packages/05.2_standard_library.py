@@ -72,7 +72,45 @@ with open(r'05_Modules_and_Packages\example.csv' , mode = 'r') as file1:
     for row in reader:
         
         print(row)
-    
+        
+####################
 
+# datetime
+
+from datetime import datetime , timedelta
+
+now_time = datetime.now()        # record current time
+print(now_time)
+
+yesterday = now_time - timedelta(days = 1)
+print(yesterday)
+
+last_week = now_time - timedelta(days = 7 , hours = 6 , minutes = 30  )
+print(last_week)
+
+####################
+
+# time 
+
+import time
+
+print(time.time())
+
+time.sleep(2)
+
+print(time.time()) 
     
+#############################
+
+# Regular expression
+
+import re
+
+pattern = r'\d+' # d for digits
+
+text : str = "There are 23 mangos"
+
+match = re.search(pattern , text)
+
+print(match.group())
     
